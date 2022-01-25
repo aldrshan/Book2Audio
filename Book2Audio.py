@@ -11,21 +11,20 @@ from gtts import gTTS
 import ffmpeg
 
 # <------------get book by user submitted title---------------->
-# TODO: If no titles found print error message (try and except in loop)
-# TODO: Narrow search by language (column E) and type (column B)
-# TODO: use regex for input
 
 # Get user input
-title = input("Enter title name; ").title()
+title = input("Enter title name; ")
 
 # read project gutenberg csv file
 print("The title you selected is: " + title)
 df = pd.read_csv("pg_catalog.csv", low_memory=False)
 
 # filtering the rows where input = title
-df = df[df['Title'].str.contains(title)]
-assert isinstance(df, object)
-print(df)
+if df['Title'].str.contains(title).any():
+    print(df.loc[df['Title'].str.contains(title)])
+else:
+    print("No titles found. Please check your spelling and capitalization!")
+    exit()
 
 # Select the text number coresponding to the title you want
 dn = input('Type the text# for your book: ')
@@ -61,8 +60,6 @@ try:
     text_file.close()
     #Closes the .txt file#
     print("UTF-8 encoding")
-
-
 
 # <------------------------Use TTS engine to save as an audio file ----------------------->
 
@@ -102,20 +99,6 @@ except:
     fh.close()
 
 # <-----------------------Convert mp3 to other formats--------------------------------->
-
-#ffmpeg -loop 1 -r 1 -i photoname.png -i audioname.mp3 -c:a copy -shortest -c:v libx264 outputname.mp4
-
-# TODO: change format of file manipulate audio etc...
-# https://manual.audacityteam.org/man/scripting.html
-
-# TODO: convert mp3 to mp4 in video maker
-# https://pypi.org/project/moviepy/
-# https://ffmpeg.org/
-
-# TODO: Schedule upload video to youtube
-# https://developers.google.com/youtube/v3/guides/uploading_a_video
-
-# TODO: Schedule upload to other content
 
 # Play a sound when done
 winsound.Beep(700, 200)
