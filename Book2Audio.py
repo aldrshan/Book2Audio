@@ -10,6 +10,14 @@ import requests
 from gtts import gTTS
 import ffmpeg
 
+#TODO frontend for selection of book and voice
+#TODO Break text to usable size for buckets
+#TODO auto select book for download
+#TODO auto create mp4 from audio and dalle images
+#TODO auto update gutenberg csv monthly
+#TODO Auto summarize book using open ai
+#TODO Dalle integration
+
 # <------------get book by user submitted title---------------->
 
 # Get user input
