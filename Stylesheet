@@ -1,13 +1,6 @@
 body {
-  background-color: lightblue;
-}
-
-h1 {
+  font-family: system-ui;
+  background: #f06d06;
   color: white;
   text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
 }
