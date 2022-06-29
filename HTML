@@ -1,3 +1,4 @@
+<h1>👋 Book2Audio!</h1>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -7,9 +8,18 @@
     <title></title>
 </head>
 <body>
-    <h1>Search for your favorite book or author</h1>
+    
+<form action="/action_page.php">
+  <p>Please select your output language:</p>
+  <input type="radio" id="English" name="fav_language" value="English">
+  <label for="English">English</label><br>
+  <input type="radio" id="Spanish" name="fav_language" value="Spanish">
+  <label for="Spanish">Spanish</label><br>
+  <input type="radio" id="French" name="fav_language" value="French">
+  <label for="French">French</label>     
 
-    <p>This tool automaticaly makes audio books from public domain books.</p>
+
+    <p>Search for a book by title or author.</p>
 
     <form action="/action_page.php" method="get" autocomplete="on">
         <label for="title">Title:</label>
@@ -29,3 +39,4 @@
 </body>
 </html>
          	
+
