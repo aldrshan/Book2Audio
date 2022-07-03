@@ -9,8 +9,10 @@ import pandas as pd
 import requests
 from gtts import gTTS
 import ffmpeg
+import re
 
-#TODO frontend for selection of book and voice
+
+#TODO Attach frontend for selection of book and voice
 #TODO Break text to usable size for buckets
 #TODO auto select book for download
 #TODO auto create mp4 from audio and dalle images
@@ -58,6 +60,11 @@ sep = "*** END OF THE PROJECT GUTENBERG EBOOK"
 text2 = text1.split(sep, 1)[0]
 print(text2)
 
+# Use regex to split into x amounts
+""" for char in text2 count chars 
+        for every 5000 characters add 1 and create new text variable for output 
+text_split = re.split('.', text0, maxsplit=5)"""
+
 try:
     # Save the output as a text file
     # Open the file
@@ -83,6 +90,7 @@ try:
     output.save(title + ".mp3")
     # Close the document
     fh.close()
+    """ Repeat for the remaining sections of regex variables"""
 except:
     # Open the file
     text_file = open("text2.txt", 'w', encoding="utf-16")
