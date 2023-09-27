@@ -6,7 +6,7 @@ The audio must then be downloaded and converted manually.
 
 # Where I am Going
 My todo list includes:
-! Creation of a front end allowing cloud selection (google, AWS, Azure, Watson) voice selection and monitoring of process
+** Creation of a front end allowing cloud selection (google, AWS, Azure, Watson) voice selection and monitoring of process. **
 ! splitting text to manageable size for s3 buckets
 ! automate download and splice audio
 ! auto update project guttenberg csv 
