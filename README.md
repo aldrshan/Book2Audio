@@ -2,9 +2,10 @@
 
 ## Where I am 
 
-At current the selected work must be manualy split into digestable pieces for processing through online services such as AWS Polly
-The audio must then be downloaded and converted manually. I have been stuck on blocking segments for upload to a bucket. 
-
+This project was rebuilt and expanded using Django to provide a db and other more better features. 
+ The new version includes a speed reader that displays a single word at a time. This can be sped up to 5000 WPM.
+ There is also an auto update for the db pulling from online sources on a weekly basis.
+ Furthermore Chat GPT is integrated for the voice which is the best I have found for long reading.
 ## Where I am Going
 My todo list includes:
 ** Creation of a front end allowing cloud selection (google, AWS, Azure, Watson) voice selection and monitoring of process. **
