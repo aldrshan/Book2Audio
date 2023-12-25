@@ -19,4 +19,4 @@ My todo list includes:
 ! connect to YouTube for automatic upload
  
 ## The end goal 
-is an automatic conversion of public domain books into audiobooks. 
+is an automatic conversion of public domain books into audiobooks by TTS engines. The best so far is Open AI TTS-HD
