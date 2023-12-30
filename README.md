@@ -10,7 +10,7 @@ This project was rebuilt and expanded using Django to provide a db and other mor
  If you are interested in the new build please send me a DM and we can colaborate.
 ## Where I am Going ##
 My todo list includes:
-** Creation of a front end allowing cloud selection (google, AWS, Azure, Watson) voice selection and monitoring of process. **
+** Creation of a front end allowing cloud selection (google, AWS, Azure, Watson) voice selection and monitoring of process.**
    splitting text to manageable size for s3 buckets
    automate download and splice audio
    auto update project guttenberg csv 
