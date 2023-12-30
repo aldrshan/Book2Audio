@@ -11,7 +11,7 @@ This project was rebuilt and expanded using Django to provide a db and other mor
 ## Where I am Going ##
 My todo list includes:
 
-** Creation of a front end allowing cloud selection (google, AWS, Azure, Watson) voice selection and monitoring of process.**
+   Creation of a front end allowing cloud selection (google, AWS, Azure, Watson) voice selection and monitoring of process.
 
    splitting text to manageable size for s3 buckets
    
