@@ -10,14 +10,22 @@ This project was rebuilt and expanded using Django to provide a db and other mor
  If you are interested in the new build please send me a DM and we can colaborate.
 ## Where I am Going ##
 My todo list includes:
+
 ** Creation of a front end allowing cloud selection (google, AWS, Azure, Watson) voice selection and monitoring of process.**
+
    splitting text to manageable size for s3 buckets
+   
    automate download and splice audio
+   
    auto update project guttenberg csv 
+   
    use open ai to give a book summary
+   
    integrate dalle to provide visuals
+   
    Integrate video conversion to 
-   connect to YouTube for automatic upload
+   
+   connect to social media for automatic upload
  
 ## The end goal ##
 is an automatic conversion of public domain books into audiobooks by TTS engines. The best so far is Open AI TTS-HD
