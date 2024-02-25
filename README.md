@@ -1,5 +1,3 @@
-kj.zcfbnfvkubndkdkfbvkjkj
-
 # Book2Audio
 
 ## Where I am ##
